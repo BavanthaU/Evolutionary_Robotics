@@ -1,0 +1,59 @@
+pybullet build time: Apr 23 2021 04:32:40
+startThreads creating 1 threads.
+starting thread 0
+started thread 0 
+argc=2
+argv[0] = --unused
+argv[1] = --start_demo_name=Physics Server
+ExampleBrowserThreadFunc started
+X11 functions dynamically loaded using dlopen/dlsym OK!
+X11 functions dynamically loaded using dlopen/dlsym OK!
+Creating context
+Created GL 3.3 context
+Direct GLX rendering context obtained
+Making context current
+GL_VENDOR=VMware, Inc.
+GL_RENDERER=llvmpipe (LLVM 10.0.0, 256 bits)
+GL_VERSION=3.3 (Core Profile) Mesa 20.0.8
+GL_SHADING_LANGUAGE_VERSION=3.30
+pthread_getconcurrency()=0
+Version = 3.3 (Core Profile) Mesa 20.0.8
+Vendor = VMware, Inc.
+Renderer = llvmpipe (LLVM 10.0.0, 256 bits)
+b3Printf: Selected demo: Physics Server
+startThreads creating 1 threads.
+starting thread 0
+started thread 0 
+MotionThreadFunc thread started
+ven = VMware, Inc.
+ven = VMware, Inc.
+b3Printf: b3Warning[examples/Importers/ImportURDFDemo/BulletUrdfImporter.cpp,126]:
+
+b3Printf: expected a world element, continuing without it.
+Traceback (most recent call last):
+  File "simulate.py", line 9, in <module>
+    simulation = SIMULATION(directOrGUI, solutionID)
+  File "/home/robotx/PDE4427_Final_Project/parallelHC/simulation.py", line 19, in __init__
+    self.robot =  ROBOT(self.solutionID)
+  File "/home/robotx/PDE4427_Final_Project/parallelHC/robot.py", line 15, in __init__
+    self.nn = NEURAL_NETWORK("brain"+solutionID+".nndf")
+  File "/home/robotx/PDE4427_Final_Project/parallelHC/pyrosim/neuralNetwork.py", line 13, in __init__
+    f = open(nndfFileName,"r")
+FileNotFoundError: [Errno 2] No such file or directory: 'brain0.nndf'
+numActiveThreads = 0
+stopping threads
+Thread with taskId 0 exiting
+Thread TERMINATED
+destroy semaphore
+semaphore destroyed
+destroy main semaphore
+main semaphore destroyed
+finished
+numActiveThreads = 0
+btShutDownExampleBrowser stopping threads
+Thread with taskId 0 exiting
+Thread TERMINATED
+destroy semaphore
+semaphore destroyed
+destroy main semaphore
+main semaphore destroyed
